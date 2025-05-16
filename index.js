@@ -242,11 +242,6 @@ function handleVoiceCommand(command) {
       editButton.style.marginRight = "8px";
       editButton.addEventListener("click", handleEditItem);
 
-      // const titleParagraph = document.createElement("p");
-      // titleParagraph.style.fontSize = "18px";
-      // titleParagraph.style.margin = "0 19px";
-      // titleParagraph.appendChild(document.createTextNode(taskTitle));
-
       const dateTimeParagraph = document.createElement("p");
       dateTimeParagraph.className = "text-muted";
       dateTimeParagraph.id = "created-at";
@@ -336,7 +331,7 @@ function addItem(e) {
   //   tasksHeading.classList.remove("hidden");
   // }
 
-  // Added new logic to check conditions whether Task and Date are entered
+  // Add new logic to check conditions whether Task and Date are entered
 
   if (!newTaskTitle) {
     displayErrorMessage("Task not entered");
@@ -587,17 +582,6 @@ function myFunction() {
   console.log("func called");
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
-// function sortTasks(order){
-//   if (order === 'highToLow'){
-//     sortByPriority('highToLow');
-
-//   }
-//   else if (order === 'lowToHigh'){
-//     sortByPriority('lowToHigh');
-//   }
-//   document.getElementById("myDropdown").classList.remove("show");
-// }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
