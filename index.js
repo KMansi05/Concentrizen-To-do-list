@@ -320,17 +320,6 @@ function addItem(e) {
   const tasks = taskList.children;
   console.log(newTaskTitle);
 
-  // if (dueDateObj < currentDate && tasks.length === 0) {
-  //   displayErrorMessage("Due date has already passed");
-  //   tasksHeading.classList.add("hidden");
-  //   return false;
-  // } else if (dueDateObj < currentDate && tasks.length > 0) {
-  //   displayErrorMessage("Due date has already passed");
-  //   return false;
-  // } else {
-  //   tasksHeading.classList.remove("hidden");
-  // }
-
   // Add new logic to check conditions whether Task and Date are entered
 
   if (!newTaskTitle) {
